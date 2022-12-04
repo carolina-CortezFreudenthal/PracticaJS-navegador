@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <title>Control de gastos</title>
+    </head>
+
+    <body>
+
+       <video src="./video_fondo.mp4"
+        autoplay="true" muted="true" loop="true">
+        </video> 
+        
+        <div class="content">
+            <h1 class="title1">CONTROL DE GASTOS</h1>
+            <div class="summary">
+                <div class="summary_element_income">
+                    <h5 class="minitittle1">Ingreso</h5>
+                    <label for="moneda" > $1500 </label>
+                </div>
+                <div class="summary_element_expense">
+                    <h5 class="minitittle2">Gasto</h5>
+                    <label for="gasto"> $152 </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div>
+                <h3 class="title2">Anadir Nueva transacción: </h6>
+            </div>
+
+            <div>
+                <label for="concept">Concepto</label>
+                <input required id="concept" type="text" placeholder="Ingrese concepto..."> 
+            </div>
+
+            <div>
+                <input type="radio" id="expense" name="expense" value="expense" checked="checked">
+                <label for="expense">Gasto</label>
+
+                <input type="radio" id="income" name="income" value="income">
+                <label for="income">Ingreso</label>
+
+                <input required id="amount" type="number" placeholder="Ingrese cantidad..."> 
+            </div>
+
+            <div>
+                <input type="submit" value="Agregar">
+            </div>
+        </div>
+
+        <div class="content">
+            <h3 class="title2">Historial de gastos:</h3>
+
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Concepto</th>
+                            <th scope="col">Monto</th>
+                            <th scope="col">Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Carns </td> 
+                            <td>150</td>
+                            <td>Gasto</td>
+                        </tr>
+                        <tr>
+                            <td>trabajo</td>
+                            <td>123</td>
+                            <td>Ingreso</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+    </body>
+</html>

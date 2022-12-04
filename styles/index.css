@@ -1,0 +1,213 @@
+:root {
+
+    --primary-color: rgb(107, 107, 180);
+    --hover-color: rgb(70, 70, 119);
+    --font-color: rgb(82, 82, 82);
+
+}
+
+/* RESET CSS */
+/* https://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: var(--font-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Forms */
+
+input[type=text], input[type=number], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(84, 3, 84);   /* rgb(204, 204, 204); */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    margin: 4px 0;
+}
+
+input[type=submit] {
+    transition: 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: var(--hover-color);
+}
+
+/* Common */
+
+.content {
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 20px;
+    width: 800px;
+    border-radius: 3px;
+    box-shadow: 0 0 13px 0 rgba(202, 8, 236, 0.2);
+    background-color: white;   
+}
+
+.title1 {
+    text-align: center;
+}
+
+/*Summary expensives*/
+.summary {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    box-shadow: 0 0 12px 0 rgba(105, 9, 142, 0.2);
+    width: 200px;
+    padding: 20px;
+}
+
+.summary_element_income {
+    text-align: center;
+    color:green;
+    font-family: Trebuchet MS;
+    border-right: solid 1px rgb(203, 203, 203);
+    width: 100%;
+}
+
+.summary_element_expense {
+    color: red;
+    font-family: Trebuchet MS;
+    width: 100%;
+    text-align: center;
+}
+
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+/* historial */
+/* la guia commpleta para usar tablas la saque de aqui https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Styling_tables */
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse:collapse;
+    border: 2px solid rgb(71, 70, 71);    
+}
+  
+thead th:nth-child(1) {
+    width: 30%;
+}
+  
+thead th:nth-child(2) {
+    width: 20%;
+}
+  
+thead th:nth-child(3) {
+    width: 15%;
+}
+  
+thead th:nth-child(4) {
+    width: 35%;
+}
+  
+th, td {
+    padding: 20px;
+    border: 2px solid rgb(71, 70, 71)
+}
+
+caption{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    font-style: normal;
+    caption-side: block-start;
+    color: --font-color ;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+/* Tipography of historial taable*/
+  
+td, th {
+    letter-spacing: 1px;
+    padding: 5px;
+}
+  
+tbody td {
+    text-align: center;
+}
+  
+tfoot th {
+    text-align: right;
+}
+
+thead, tfoot {
+    color: white;
+    /* color: rgb(82, 82, 82);
+    text-shadow: 1px 1px 1px rgb(101, 101, 200); */
+}
+  
+thead th, tfoot th, tfoot td {
+    background-color: var(--primary-color);
+    font-weight: 100;
+    /* background: linear-gradient(to top, rgba(163, 21, 176, 0.1), rgb(101, 101, 200) ); */
+    border: 2px solid rgb(71, 70, 71);
+}
+
+
+
+  
+
+
+
+
+
+
+
+
