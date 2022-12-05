@@ -120,6 +120,14 @@ input[type=submit]:hover {
     color: red;
     font-family: Trebuchet MS;
     width: 100%;
+    border-right: solid 1px rgb(203, 203, 203);
+    text-align: center;
+}
+.summary_element_save
+ {
+    color: rgb(0, 68, 255);
+    font-family: Trebuchet MS;
+    width: 100%;
     text-align: center;
 }
 
@@ -200,6 +208,9 @@ thead th, tfoot th, tfoot td {
     border: 2px solid rgb(71, 70, 71);
 }
 
+.deleteButton {
+    background-color: red;
+}
 
 
   
