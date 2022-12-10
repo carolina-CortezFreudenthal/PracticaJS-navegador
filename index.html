@@ -22,17 +22,17 @@
             <div class="summary">
                 <div class="summary_element_income">
                     <h5 class="minitittle1">INGRESO</h5>
-                    <label for="ingreso" > $1500 </label>
+                    <label name="totalincome" ></label>
                 </div>
 
                 <div class="summary_element_expense">
                     <h5 class="minitittle2">GASTO</h5>
-                    <label for="gasto"> $152 </label>
+                    <label name="totalexpense"></label>
                 </div>  
 
                 <div class="summary_element_save">
                     <h5 class="minitittle3">AHORRO</h5>
-                    <label for="ahorro"> $20 </label>
+                    <label name="savings"></label>
                 </div>
 
                 
@@ -40,16 +40,12 @@
         </div>
         
         <div class="content">
-            <div>
                 <h3 class="title2">Anadir Nueva transacción: </h6>
-            </div>
-
-            <div>
+                
+            <form id="transactionform" action="">
                 <label for="concepttitle">Concepto</label>
                 <input  id="inputconcept" name="inputconcept" type="text" placeholder="Ingrese concepto..."> 
-            </div>
 
-            <div>
                 <input type="radio" id="expense" name="transactiontype" value="expense" checked="checked">
                 <label for="expensetitle">Gasto</label>
 
@@ -58,8 +54,8 @@
 
                 <input  id="inputamount" name="inputamount" type="number" placeholder="Ingrese cantidad..."> 
 
-                <input id="submit" type="submit" value="Agregar" onclick="addTransaction()">
-            </div>
+                <input id="submit" type="submit" value="Agregar">
+            </form>
         </div>
 
         <div class="content">

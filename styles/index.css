@@ -2,6 +2,8 @@
 
     --primary-color: rgb(107, 107, 180);
     --hover-color: rgb(70, 70, 119);
+    --secondary-color: rgb(201, 106, 114);
+    --secondary-color-hover: rgb(165, 86, 93);
     --font-color: rgb(82, 82, 82);
 
 }
@@ -104,7 +106,7 @@ input[type=submit]:hover {
     justify-content: space-between;
     border-radius: 4px;
     box-shadow: 0 0 12px 0 rgba(105, 9, 142, 0.2);
-    width: 200px;
+    width: 400px;
     padding: 20px;
 }
 
@@ -208,8 +210,19 @@ thead th, tfoot th, tfoot td {
     border: 2px solid rgb(71, 70, 71);
 }
 
-.deleteButton {
-    background-color: red;
+.deletebutton {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.deletebutton:hover {
+    background-color: var(--secondary-color-hover);
 }
 
 
